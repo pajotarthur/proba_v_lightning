@@ -3,7 +3,7 @@
 
 [Challenge Website](https://kelvins.esa.int/proba-v-super-resolution/)
 
-A report is available at Report.ipynb
+A report is available : Report.ipynb
 
 ## Code organization
 
@@ -15,11 +15,14 @@ A report is available at Report.ipynb
 - script/* contains useful scripts
 
 
-to launch the code : 
-
-First run : python scripts/image_preprocessing.py
+to launch the code, first run :
+ 
+ ```
+ python scripts/image_preprocessing.py
+```
 
 Then :
+```
 python main.py --gpus 1 --data_root .../proba_v/train --batch_size 16 --alpha $alpha --lrg 0.0002 --nc 7 --topk 5 --rand True --stat True
-
+```
 
